@@ -154,7 +154,7 @@ a:hover {
 
 .btn-solid-reg {
 	display: inline-block;
-	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	padding: 1.375rem 0.85rem 1.375rem 0.5rem;
 	border: 1px solid #ffb900;
 	border-radius: 2px;
 	background-color: #ffb900;
@@ -377,7 +377,7 @@ a:hover {
 
 .navbar .logo-image img {
     width: 139px;
-	height: 32px;
+	height: 52px;
 }
 
 .navbar .logo-text {
@@ -1365,7 +1365,7 @@ a:hover {
 	margin-bottom: 0.125rem;
 	color: #ffb900;
 	font-weight: 700;
-	font-size: 2.875rem;
+	font-size: 2.275rem;
 	line-height: 3.25rem;
 	font-family: "Montserrat", sans-serif;
 }
@@ -1420,7 +1420,7 @@ a:hover {
 .footer {
 	padding-top: 6.5rem;
 	padding-bottom: 1.5rem;
-	background-color: #153e52;
+	background-color: #0c0c0c;
 }
 
 .footer a {
@@ -1477,7 +1477,7 @@ a:hover {
 /*********************/
 .copyright {
 	padding-bottom: 1rem;
-	background-color: #153e52;
+	background-color: #0c0c0c;
 	text-align: center;
 }
 
