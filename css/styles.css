@@ -26,7 +26,7 @@ Table Of Contents:
 /*****************************************
 Colors:
 - Backgrounds - light gray #fbfbfb
-- Navbar, footer - dark blue #153e52
+- Navbar, footer - dark blue #0c0c0c
 - Buttons, icons - green #ffb900
 - Headings text - black #484a46
 - Body text - dark gray #787976
@@ -364,7 +364,7 @@ a:hover {
 /*     Navigation     */
 /**********************/
 .navbar {
-	background-color: #153e52;
+	background-color: #0c0c0c;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
@@ -398,7 +398,7 @@ a:hover {
 	padding-left: 1rem;
 	overflow-y: auto;
 	visibility: hidden;
-	background-color: #153e52;
+	background-color: #0c0c0c;
 	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
@@ -449,7 +449,7 @@ a:hover {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 	border: none;
-	background-color: #153e52;
+	background-color: #0c0c0c;
 }
 
 .navbar .dropdown-item {
@@ -462,7 +462,7 @@ a:hover {
 }
 
 .navbar .dropdown-item:hover {
-	background-color: #153e52;
+	background-color: #0c0c0c;
 	color: #ffb900;
 }
 
@@ -979,7 +979,7 @@ a:hover {
 .form-1 {
 	padding-top: 8rem;	
 	padding-bottom: 8rem;	
-	background-color: #153e52;
+	background-color: #0c0c0c;
 }
 
 .form-1 .text-container {
@@ -1522,7 +1522,7 @@ a:hover {
 .ex-header {
 	padding-top: 8.5rem;
 	padding-bottom: 4rem;
-	background-color: #153e52;
+	background-color: #0c0c0c;
 }
 
 .ex-header h1 {
