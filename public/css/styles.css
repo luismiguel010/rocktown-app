@@ -2226,6 +2226,69 @@ a:hover {
 	height: 100%;
 }
 
-.radio-reproductor {
-	margin-right: 40px;
+.footer-container {
+	position: fixed;
+	/* Fijar la posición */
+	bottom: 0;
+	/* Ajustar en la parte inferior */
+	left: 0;
+	width: 100%;
+	/* Ocupar todo el ancho */
+	background-color: #333;
+	/* Color de fondo del footer */
+}
+
+/* Estilos para el iframe */
+.footer-container iframe {
+	width: 100%;
+	/* Ocupar todo el ancho del contenedor */
+	height: 105px;
+	/* Altura fija o la que desees */
+	border: 0;
+	/* Eliminar el borde del iframe */
+}
+
+.image-container-radio {
+	position: fixed;
+	bottom: 70px;
+	z-index: 1;
+	right: 10px;
+	image-resolution: from-image;
+}
+
+/* Estilos para la imagen */
+.image-container-radio img {
+	width: 100px;
+	/* Tamaño de la imagen */
+	height: auto;
+}
+
+.image-container-radio-wave {
+	position: fixed;
+	bottom: 10px;
+	z-index: 1;
+	right: 0;
+	image-resolution: from-image;
+}
+
+/* Estilos para la imagen */
+.image-container-radio-wave img {
+	width: 80px;
+	/* Tamaño de la imagen */
+	height: 50px;
+}
+
+.image-container-background-radio {
+	position: fixed;
+	bottom: 60px;
+	z-index: 1;
+	right: 0;
+	image-resolution: from-image;
+}
+
+/* Estilos para la imagen */
+.image-container-background-radio img {
+	width: 100%;
+	/* Tamaño de la imagen */
+	height: 52px;
 }
