@@ -638,7 +638,7 @@
                     // Verificar si el ancho de la ventana es menor o igual a 600px (indicativo de dispositivo móvil)
                     if (window.innerWidth <= 600) {
                         // Abrir enlace en la misma ventana para dispositivos móviles
-                        window.location.href = 'https://zeno.fm/player/rock-town-radio';
+                        window.open('https://zeno.fm/player/rock-town-radio', '_blank');
                     } else {
                         // Abrir ventana emergente para computadoras
                         var popup = window.open('', '', 'width=600, height=300');
