@@ -594,7 +594,7 @@
         </div> <!-- end of footer -->
         <!-- end of footer -->
 
-        <div class="image-container-background-radio">
+        <!--<div class="image-container-background-radio">
             <img src="images/background-radio.jpg" alt="Tu Imagen">
         </div>
 
@@ -604,7 +604,7 @@
 
         <div class="image-container-radio-wave">
             <img src="images/waves.JPEG" alt="Tu Imagen">
-        </div>
+        </div>-->
 
 
         <!-- Copyright -->
@@ -623,9 +623,23 @@
 
         <!-- end of back to top button -->
 
-        <div class="footer-container">
+        <!--<div class="footer-container">
             <iframe src="https://zeno.fm/player/rock-town-radio" frameborder="0" scrolling="no"></iframe>
+        </div>-->
+
+        <div class="boton-flotante">
+            <a href="#">
+                <img src="images/rock-town-radio-circle.png" alt="Botón Flotante" id="abrir-iframe">
+            </a>
         </div>
+
+        <script>
+            document.getElementById('abrir-iframe').addEventListener('click', function () {
+                // Abre una nueva ventana emergente con el iframe
+                var popup = window.open('', '', 'width=600, height=300');
+                popup.document.write('<iframe src="https://zeno.fm/player/rock-town-radio" width="575" height="250" frameborder="0" scrolling="no"></iframe>');
+            });
+        </script>
 
         <!-- Scripts -->
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->

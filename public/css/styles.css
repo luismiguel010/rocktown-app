@@ -2292,3 +2292,36 @@ a:hover {
 	/* Tamaño de la imagen */
 	height: 52px;
 }
+
+/* Estilo para el botón flotante */
+.boton-flotante {
+	position: fixed;
+	bottom: 50px;
+	/* Píxeles desde la parte inferior */
+	right: 20px;
+	/* Píxeles desde la parte derecha */
+}
+
+/* Estilo para la imagen del botón */
+.boton-flotante img {
+	width: 100px;
+	/* Ancho de la imagen */
+	height: 100px;
+	/* Altura de la imagen */
+  cursor: pointer;
+}
+
+/* Estilo para el botón flotante en pantallas más pequeñas (menos de 600px de ancho) */
+@media (max-width: 600px) {
+	.boton-flotante {
+		bottom: 20px;
+		/* Ajustar la posición en pantallas pequeñas */
+		right: 10px;
+	}
+
+	.boton-flotante img {
+		width: 60px;
+		/* Ajustar el tamaño de la imagen en pantallas pequeñas */
+		height: 60px;
+	}
+}
