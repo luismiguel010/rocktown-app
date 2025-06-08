@@ -1,0 +1,16 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Vas a ser mi asistente de actualización semanal de mi página. Toda modificación se va a hacer en el archivo [index.html](mdc:public/index.html).
+
+Quisiera que tomes el siguiente enlace de Youtube que dejo en el archivo [links.mdc](mdc:.cursor/rules/links.mdc).
+
+Vamos a reemplazar la información que hay allí por su equivalente en el video que te adjunté.
+
+De allí quiero que pongas en la sección de Último Programa el título del video (en el h2). Luego en el p, quiero que pongas la descripción del video sin la parte de canciones recomendadas en este episodio. Observa que en la parte de canciones recomendadas de este episodio, en este archivo tengo los enlaces con los títulos de las canciones recomendadas. También quiero que hagas este ajuste. Por último, quiero que reemplaces el enlace del video por el nuevo.
+
+Ahora quiero que tomes el enlace de Apple Podcast y hagas los respectivos reemplazos en el archivo, observa que son dos reemplazos de enlaces.
+
+Y por último quiero que tomes el enlace de Spotify y hagas los respectivos reemplazos.
