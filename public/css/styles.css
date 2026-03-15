@@ -25,11 +25,11 @@ Table Of Contents:
 
 /*****************************************
 Colors:
-- Backgrounds - light gray #fbfbfb
-- Navbar, footer - dark blue #0c0c0c
-- Buttons, icons - green #ffb900
-- Headings text - black #484a46
-- Body text - dark gray #787976
+- Backgrounds - dark #121212 / dark alt #1a1a1a
+- Navbar, footer - dark #0c0c0c
+- Buttons, icons - gold #ffb900
+- Headings text - white #f0f0f0
+- Body text - light gray #b0b0a8
 ******************************************/
 
 
@@ -42,57 +42,67 @@ html {
 	height: 100%;
 }
 
+body {
+	background-color: #121212;
+}
+
 body, p {
-	color: #787976;
+	color: #b0b0a8;
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
 h1 {
-	color: #484a46;
-	font-weight: 700;
+	color: #f0f0f0;
+	font-weight: 400;
 	font-size: 2.5rem;
 	line-height: 3.25rem;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Bebas Neue", "Montserrat", sans-serif;
+	letter-spacing: 0.05em;
 }
 
 h2 {
-	color: #484a46;
-	font-weight: 700;
+	color: #f0f0f0;
+	font-weight: 400;
 	font-size: 2rem;
 	line-height: 2.5rem;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Bebas Neue", "Montserrat", sans-serif;
+	letter-spacing: 0.04em;
 }
 
 h3 {
-	color: #484a46;
-	font-weight: 700;
+	color: #f0f0f0;
+	font-weight: 400;
 	font-size: 1.75rem;
 	line-height: 2.25rem;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Bebas Neue", "Montserrat", sans-serif;
+	letter-spacing: 0.04em;
 }
 
 h4 {
-	color: #484a46;
-	font-weight: 700;
+	color: #f0f0f0;
+	font-weight: 400;
 	font-size: 1.5rem;
 	line-height: 2rem;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Bebas Neue", "Montserrat", sans-serif;
+	letter-spacing: 0.04em;
 }
 
 h5 {
-	color: #484a46;
-	font-weight: 700;
+	color: #f0f0f0;
+	font-weight: 400;
 	font-size: 1.25rem;
 	line-height: 1.625rem;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Bebas Neue", "Montserrat", sans-serif;
+	letter-spacing: 0.03em;
 }
 
 h6 {
-	color: #484a46;
-	font-weight: 700;
+	color: #f0f0f0;
+	font-weight: 400;
 	font-size: 1rem;
 	line-height: 1.375rem;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Bebas Neue", "Montserrat", sans-serif;
+	letter-spacing: 0.03em;
 }
 
 .p-large {
@@ -120,12 +130,12 @@ h6 {
 }
 
 a {
-	color: #787976;
+	color: #b0b0a8;
 	text-decoration: underline;
 }
 
 a:hover {
-	color: #787976;
+	color: #ffb900;
 	text-decoration: underline;
 }
 
@@ -138,7 +148,7 @@ a:hover {
 }
 
 .bg-gray {
-	background-color: #fbfbfb;
+	background-color: #1a1a1a;
 }
 
 .green {
@@ -154,21 +164,24 @@ a:hover {
 
 .btn-solid-reg {
 	display: inline-block;
-	padding: 1.375rem 0.85rem 1.375rem 0.5rem;
-	border: 1px solid #ffb900;
-	border-radius: 2px;
-	background-color: #ffb900;
-	color: #ffffff;
-	font-size: 0.875rem;
-	line-height: 0;
+	padding: 0.75rem 1.5rem;
+	border: 2px solid #ffb900;
+	border-radius: 25px;
+	background-color: transparent;
+	color: #ffb900;
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
 	text-decoration: none;
-	transition: all 0.2s;
+	transition: all 0.3s ease;
 }
 
 .btn-solid-reg:hover {
-	background-color: transparent;
-	color: #ffb900; /* needs to stay here because of the color property of a tag */
+	background-color: #ffb900;
+	color: #121212;
 	text-decoration: none;
+	box-shadow: 0 4px 15px rgba(255, 185, 0, 0.3);
 }
 
 .btn-solid-lg {
@@ -305,7 +318,7 @@ a:hover {
 }
 
 .modal-content {
-	background-color: #ffffff;
+	background-color: #1e1e1e;
 }
 
 .modal-content .btn-close {
@@ -551,7 +564,7 @@ a:hover {
 }
 
 .basic-1 .testimonial-author {
-	color: #484a46;
+	color: #f0f0f0;
 }
 
 /* Hover Animation */
@@ -573,6 +586,11 @@ a:hover {
 }
 /* end of hover animation */
 
+/* Gap between YouTube and Apple Podcast iframes */
+.basic-1 .col-lg-7 iframe + iframe {
+	margin-top: 1.5rem;
+}
+
 
 /***********************/
 /*     Description     */
@@ -586,27 +604,31 @@ a:hover {
 .cards-1 .card {
 	margin-bottom: 3rem;
 	border: none;
-	text-align: left;
+	text-align: center;
+	background-color: #1e1e1e;
+	border-radius: 12px;
+	padding: 2rem 1.5rem;
+	transition: all 0.3s ease;
+}
+
+.cards-1 .card a {
+	text-decoration: none;
 }
 
 .cards-1 .fa-stack {
-	width: 6rem;
-	height: 6rem;
+	width: 4rem;
+	height: 4rem;
 	margin-bottom: 1rem;
-	line-height: 6rem;
+	line-height: 4rem;
 }
 
 .cards-1 .fa-stack .hexagon {
-	position: absolute;
-	width: 6rem;
-	height: 6rem;
-	background: url('../images/hexagon-green.svg') center center no-repeat;
-	background-size: 6rem 6rem;
+	display: none;
 }
 
 .cards-1 .fa-stack-1x {
 	color: #ffffff;
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 .cards-1 .card-body {
@@ -614,7 +636,42 @@ a:hover {
 }
 
 .cards-1 .card-title {
-	margin-bottom: 0.625rem;
+	margin-bottom: 0;
+	color: #ffffff;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-size: 0.9rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+/* Platform cards - unified dark theme */
+.cards-1 .card.card-spotify,
+.cards-1 .card.card-apple {
+	border: 1px solid #2a2a2a;
+}
+
+.cards-1 .card.card-spotify .fa-stack-1x,
+.cards-1 .card.card-apple .fa-stack-1x {
+	color: #ffb900;
+}
+
+.cards-1 .card.card-spotify:hover,
+.cards-1 .card.card-apple:hover {
+	background-color: #ffb900;
+	transform: translateY(-4px);
+	box-shadow: 0 8px 25px rgba(255, 185, 0, 0.3);
+	border-color: #ffb900;
+}
+
+.cards-1 .card.card-spotify:hover .fa-stack-1x,
+.cards-1 .card.card-apple:hover .fa-stack-1x {
+	color: #121212;
+}
+
+.cards-1 .card.card-spotify:hover .card-title,
+.cards-1 .card.card-apple:hover .card-title {
+	color: #121212;
 }
 
 
@@ -638,7 +695,8 @@ a:hover {
 .cards-2 .card {
 	margin-bottom: 6rem;
 	border: none;
-	background-color: #ffffff;
+	background-color: #1e1e1e;
+	border-radius: 8px;
 }
 
 /* Hover Animation */
@@ -683,7 +741,7 @@ a:hover {
 }
 
 .cards-2 .card-body .price {
-	color: #484a46;
+	color: #f0f0f0;
 	font-weight: 700;
 	font-size: 1.125rem;
 	line-height: 1.625rem;
@@ -694,14 +752,13 @@ a:hover {
 }
 
 .cards-2 .button-wrapper {
-	position: absolute;
-	right: 0;
-	bottom: -1.5rem;
-	left: 0;
+	position: relative;
+	padding-top: 0.75rem;
 }
 
 .cards-2 .btn-solid-reg:hover {
-	background-color: #ffffff;
+	background-color: #ffb900;
+	color: #121212;
 }
 
 
@@ -767,7 +824,7 @@ a:hover {
 	padding: 0;
 	border: none;
 	background-color: transparent;
-	color: #484a46;
+	color: #f0f0f0;
 	box-shadow: none;
 	font-weight: 700;
 	font-size: 1.25rem;
@@ -836,7 +893,7 @@ a:hover {
 
 .tabs-1 #tab-1 .progress-container .title {
 	margin-bottom: 0.25rem;
-	color: #484a46;
+	color: #f0f0f0;
 	font: 600 0.875rem/1.25rem "Open Sans", sans-serif;
 }
 
@@ -844,7 +901,7 @@ a:hover {
 	height: 22px;
 	margin-bottom: 1.125rem;
 	border-radius: 0.125rem;
-	background-color: #f9fafc;
+	background-color: #2a2a2a;
 }
 
 .tabs-1 #tab-1 .progress-bar {
@@ -938,13 +995,13 @@ a:hover {
 
 .slider-1 .swiper-button-prev {
 	left: -10px;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23484a46'%2F%3E%3C%2Fsvg%3E");
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23f0f0f0'%2F%3E%3C%2Fsvg%3E");
 	background-size: 18px 28px;
 }
 
 .slider-1 .swiper-button-next {
 	right: -10px;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23484a46'%2F%3E%3C%2Fsvg%3E");
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23f0f0f0'%2F%3E%3C%2Fsvg%3E");
 	background-size: 18px 28px;
 }
 
@@ -969,7 +1026,7 @@ a:hover {
 
 .slider-1 .testimonial-author {
 	margin-bottom: 0;
-	color: #484a46;
+	color: #f0f0f0;
 }
 
 
@@ -1067,7 +1124,7 @@ a:hover {
 	padding: 0.3125rem 1.375rem 0.25rem 1.375rem;
 	border-radius: 2px;
 	border: none;
-	background-color: #f1f4f7;
+	background-color: #2a2a2a;
 	color: #7b7e85;
 	font-weight: 700;
 	font-size: 0.75rem;
@@ -1364,10 +1421,10 @@ a:hover {
 .counter .counter-container .purecounter {
 	margin-bottom: 0.125rem;
 	color: #ffb900;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 2.275rem;
 	line-height: 3.25rem;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Bebas Neue", "Montserrat", sans-serif;
 }
 
 .counter .counter-container .counter-info {
@@ -1541,7 +1598,7 @@ a:hover {
 
 .ex-basic-1 .text-box {
 	padding: 1.25rem 1.25rem 0.5rem 1.25rem;
-	background-color: #fbfbfb;
+	background-color: #1a1a1a;
 }
 
 .ex-cards-1 .card {
