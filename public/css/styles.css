@@ -8,6 +8,7 @@ Table Of Contents:
 - Intro
 - Description
 - Services
+- Radio Schedule
 - Details 1
 - Details 2
 - Testimonials
@@ -759,6 +760,137 @@ a:hover {
 .cards-2 .btn-solid-reg:hover {
 	background-color: #ffb900;
 	color: #121212;
+}
+
+
+/***************************/
+/*     Radio Schedule     */
+/***************************/
+.schedule-1 {
+	padding-top: 8rem;
+	padding-bottom: 5rem;
+	text-align: center;
+}
+
+.schedule-1 .section-title {
+	margin-bottom: 0.5rem;
+}
+
+.schedule-1 .h2-heading {
+	margin-bottom: 1.5rem;
+}
+
+.schedule-1 .schedule-intro {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.schedule-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+	margin: 3rem 0 2.5rem 0;
+	text-align: left;
+}
+
+.schedule-item {
+	position: relative;
+	background-color: #1e1e1e;
+	border: 1px solid #2a2a2a;
+	border-radius: 12px;
+	padding: 1.75rem 1.5rem;
+	transition: all 0.3s ease;
+}
+
+.schedule-item .schedule-icon {
+	color: #ffb900;
+	font-size: 1.75rem;
+	margin-bottom: 0.75rem;
+}
+
+.schedule-item .schedule-time {
+	color: #ffb900;
+	font-weight: 700;
+	font-size: 0.8125rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin-bottom: 0.375rem;
+}
+
+.schedule-item .schedule-title {
+	margin-bottom: 0.5rem;
+}
+
+.schedule-item .schedule-genre {
+	display: inline-block;
+	padding: 0.25rem 0.75rem;
+	border: 1px solid #3a3a3a;
+	border-radius: 25px;
+	color: #b0b0a8;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.schedule-item .on-air-badge {
+	display: none;
+	align-items: center;
+	gap: 0.375rem;
+	position: absolute;
+	top: 1.25rem;
+	right: 1.5rem;
+	color: #ffb900;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.schedule-item .on-air-badge .dot {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #ffb900;
+	animation: schedule-pulse 1.5s infinite;
+}
+
+.schedule-item.on-air {
+	border-color: #ffb900;
+	background-color: #262015;
+	box-shadow: 0 8px 25px rgba(255, 185, 0, 0.15);
+}
+
+.schedule-item.on-air .on-air-badge {
+	display: flex;
+}
+
+@keyframes schedule-pulse {
+	0% { box-shadow: 0 0 0 0 rgba(255, 185, 0, 0.6); }
+	70% { box-shadow: 0 0 0 6px rgba(255, 185, 0, 0); }
+	100% { box-shadow: 0 0 0 0 rgba(255, 185, 0, 0); }
+}
+
+.schedule-1 .now-playing {
+	margin-bottom: 1.5rem;
+	font-size: 1.0625rem;
+}
+
+.schedule-1 .now-playing span {
+	color: #ffb900;
+	font-weight: 700;
+}
+
+@media (min-width: 768px) {
+	.schedule-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 992px) {
+	.schedule-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 
